@@ -1,9 +1,8 @@
 import React from "react";
 
-const SearchKeywords = ({ value, onChange, onSearch }) => {
+const SearchKeyword = ({ value, onChange }) => {
   const handleSearchChange = (event) => {
     onChange(event);
-    onSearch();
   };
 
   return (
@@ -19,4 +18,4 @@ const SearchKeywords = ({ value, onChange, onSearch }) => {
   );
 };
 
-export default SearchKeywords;
+export default SearchKeyword;

@@ -9,7 +9,7 @@ const getPhotos = async (page) => {
       per_page: PER_PAGE,
       page,
     });
-    return result.photos;
+    return (result?.photos || []);
   } catch (error) {
     console.error("Error fetching curated photos:", error);
     return [];
